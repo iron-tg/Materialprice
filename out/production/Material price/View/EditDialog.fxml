@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="343.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditDialogController">
+   <children>
+      <GridPane layoutX="29.0" layoutY="30.0" prefHeight="231.0" prefWidth="449.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="序号" />
+            <Label text="名称" GridPane.rowIndex="1" />
+            <Label text="单位" GridPane.rowIndex="2" />
+            <Label text="单价" GridPane.rowIndex="3" />
+            <Label text="数量" GridPane.rowIndex="4" />
+            <TextField fx:id="no_Field" GridPane.columnIndex="1" />
+            <TextField fx:id="name_Field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="unit_Field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="price_Field" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="scale_Field" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button layoutX="153.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleOk" text="确定" />
+      <Button layoutX="319.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleCancel" text="取消" />
+   </children>
+</AnchorPane>
